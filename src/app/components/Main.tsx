@@ -12,11 +12,11 @@ const Main = ({children}: any) => {
             w-screen
             bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black
             text-white
+            
         ">
+          <Header />
+          {children}
 
-        <Header />
-
-        {children}
     </main>
 )};
 
