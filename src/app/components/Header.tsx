@@ -80,7 +80,7 @@ const Header = () => {
           ">
               {routes.map( (route, index) => {
                   return (
-                      <Link href={route.path} className={styleString(route.path, "lg")}>
+                      <Link href={route.path} className={styleString(route.path, "lg")} key={index}>
                           {route.icon}
                           {route.name}
                       </Link>
@@ -94,7 +94,7 @@ const Header = () => {
             <div className={twMerge(isMenuOpen && "flex flex-col" || "hidden", "bg-gray-900/50 w-full transition-all duration-500")}>
               {routes.map( (route, index) => {
                   return (
-                      <Link href={route.path} className={styleString(route.path, "sm")}>
+                      <Link href={route.path} className={styleString(route.path, "sm")} key={index}>
                           {route.name}
                       </Link>
                   );
